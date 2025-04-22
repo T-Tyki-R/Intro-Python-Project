@@ -29,5 +29,11 @@ def check_status():
         print(f"'{task}' isn't in the list.")
 
 # Display Task List
+def display_tasks():
+    if len(task_list) == 0:
+        print("No tasks in the list.")
+    else:
+        for i in range(len(task_list)):
+            print(f"{i + 1}. {task_list[i]} - {task_stat[i]}")
 
-# Appplication Menu
+# Application Menu
